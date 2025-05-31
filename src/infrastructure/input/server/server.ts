@@ -1,4 +1,5 @@
 import express, { Router } from 'express';
+import { setupSwagger } from './swagger';
 
 interface Options {
     port?: Number;
@@ -20,12 +21,14 @@ export class Server {
 
     async start() {
         this.app.use(express.json());
+        setupSwagger(this.app);
         this.app.use(express.urlencoded({ extended: true }));
 
         this.app.use(this.routes);
 
         this.app.listen(this.port, () => {
             console.log(`Server is running on port ${this.port}`);
+            console.log(`API documentation available at http://localhost:${this.port}/api-docs`);
         });
     }
 }

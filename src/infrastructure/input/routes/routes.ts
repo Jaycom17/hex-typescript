@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { ExcuseRoutes } from "./excuse.routes";
+import { ExcuseRoutes } from "./excuses.routes";
 import { errorHandlerMiddleware } from "../../output/exceptionsHandler/exeptionMiddleware";
 
 export class AppRoutes {
