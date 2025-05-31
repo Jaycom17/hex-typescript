@@ -68,7 +68,7 @@ hex-typescript/
 ## Instalación
 1. Clona el repositorio:
    ```bash
-   git clone <url-del-repo> 
+   git clone https://github.com/Jaycom17/hex-typescript.git
    cd hex-typescript
    ```
 2. Instala las dependencias:
@@ -90,7 +90,21 @@ hex-typescript/
   npm run dev
   ```
 
-La API estará disponible en `http://localhost:<PUERTO>`.
+## Endpoints de la API
+
+La API estará disponible en `http://localhost:<PUERTO>/api`.
+
+La API expone los siguientes endpoints para gestionar las excusas:
+
+| Método | Endpoint           | Descripción                                  |
+|--------|--------------------|----------------------------------------------|
+| GET    | `/excuses`         | Obtiene todas las excusas almacenadas.       |
+| GET    | `/excuses/:id`     | Obtiene una excusa por su ID.                |
+| POST   | `/excuses`         | Crea una nueva excusa.                       |
+| PUT    | `/excuses/:id`     | Actualiza una excusa existente por su ID.    |
+| DELETE | `/excuses/:id`     | Elimina una excusa por su ID.                |
+
+Todos los endpoints devuelven datos en formato JSON y utilizan el estándar RESTful.
 
 ## Licencia
 MIT

@@ -6,7 +6,7 @@ export class AppRoutes {
   static get routes(): Router {
     const router = Router();
 
-    router.use("/api/excuse", ExcuseRoutes.routes);
+    router.use("/api/excuses", ExcuseRoutes.routes);
 
     router.use(errorHandlerMiddleware);
 
