@@ -16,6 +16,7 @@ Proyecto de ejemplo para **aprender y practicar la arquitectura hexagonal (Ports
 - [Instalación](#instalación)
 - [Configuración](#configuración)
 - [Ejecución](#ejecución)
+- [Endpoints de la API](#endpoints-de-la-api)
 - [Licencia](#licencia)
 
 ---
